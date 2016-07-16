@@ -1,0 +1,68 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!--jquery-->
+<script src="C:\Users\Rada\Desktop\pomodoro\js\easytimer.min.js"></script><!--easytimer library-->
+<!--<script src="C:\Users\Rada\Desktop\pomodoro\js\pomo.js"></script> my logic-->
+<script src="C:\Users\Rada\Desktop\pomodoro\js\upAndDown.js"></script> <!--my up and down-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!--boostrap-->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><!--bootstrap css-->
+<link rel="stylesheet" type="text/css" href="C:\Users\Rada\Desktop\pomodoro\css\pomostyle.css"><!--my css-->
+</head>
+<div class="container-fluid">
+<div class="row" id="controlPanel">
+
+	<div class = "col-sm-4 col-sm-offset-0 controls">
+	  <div class="input-group input-group-lg">
+      <span class="input-group-btn">
+        <button class="btn btn-default down" id="downSprintTime" type="button">-</button>
+      </span>
+      <input type="text" class="form-control" id="sprintTime" placeholder="00:30">
+      <span class="input-group-btn">
+        <button class="btn btn-default up" id="upSprintTime" type="button">+</button>
+      </span>
+	</div>
+	</div>
+
+	<div class = "col-sm-4 controls">
+	  <div class="input-group input-group-lg">
+      <span class="input-group-btn">
+        <button class="btn btn-default down" id="downRestTime" type="button">-</button>
+      </span>
+      <input type="text" class="form-control" id="restTime" placeholder="01:00">
+      <span class="input-group-btn">
+        <button class="btn btn-default up" id="upRestTime" type="button">+</button>
+      </span>
+	</div>
+	</div>
+
+	<div class = "col-sm-4 controls">
+	  <div class="input-group input-group-lg">
+      <span class="input-group-btn">
+        <button class="btn btn-default down" id="downSprints" type="button">-</button>
+      </span>
+     <input type="text" class="form-control" id="sprints" placeholder="10">
+      <span class="input-group-btn">
+        <button class="btn btn-default up" id="upSprints" type="button">+</button>
+      </span>
+	</div>
+	</div>
+
+
+</div> <!--closing container div -->
+
+<div class="letsGo">
+<button class="letsGoButton">LET'S GO!</button>
+</div>
+
+<div id="countdownExample">
+    <center><div class="values"></div></center>
+
+   
+    <center>
+        
+        <button class="startButton">Start</button>
+        <button class="pauseButton" >Pause</button>
+        <button class="stopButton">Stop</button>
+   
+   </center>
+ 
+</div>

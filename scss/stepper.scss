@@ -1,0 +1,105 @@
+@import "bower_components/susy/sass/susy";
+@import url(https://fonts.googleapis.com/css?family=Happy+Monkey|Lemon);
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Happy Monkey";
+  line-height: 1.5;
+  min-width: 20em;
+}
+
+.passengers {
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60em;
+}
+
+h1 {
+  font-family: 'Lemon';
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.passenger {
+  margin-bottom: 1em;
+  padding-right: 1.69492%;
+}
+
+@media screen and (min-width: 480px) {
+  .passenger {
+    @include span(4 of 12);
+    text-align: center;
+    border-right: 1px solid black;
+    &:nth-child(3n) {
+      @include last;
+      border-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .passenger__label {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 10.25em);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .passenger__label span {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .passenger__label span {
+    display: block;
+  }
+}
+
+.passenger__stepper {
+  display: inline-block;
+  text-align: center;
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .passenger__stepper {
+    width: 10em;
+  }
+}
+
+.stepper {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 1.25em;
+  background: black;
+  color: white;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  box-shadow: 0.125em 0.125em 0 0 white, 0.125em 0.125em 0 1px black;
+  &:active {
+    box-shadow: 0 0 0 1px white, 0 0 0 1px black;
+    transform: translate(0.125rem, 0.125rem);
+  }
+}
+
+.stepper__display {
+  font-size: 2em;
+  margin: 0 0.5em;
+}
